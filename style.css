@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color1:  hsl(31, 77%, 52%);
+    --primary-color2:hsl(184, 100%, 22%);
+    --primary-color3:  hsl(179, 100%, 13%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+@media (max-width:1440px) {
+    
+
+.card{
+    width: 60%;
+    height: 400px;
+    display: flex;
+    flex: wrap;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-left: 20%;
+    margin-top: 50px;
+    color: white;
+    line-height: 1.5;
+    
+    border-radius: 10px;
+}
+.card-orange{
+    background-color: var(--primary-color1);
+    border-radius: 10px 0 0 10px ;
+}
+.card-cyan{
+    background-color: var(--primary-color2);
+}
+.card-darkcyan{
+    background-color: var(--primary-color3);
+    border-radius: 0 10px 10px 0;
+
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+}
+p{
+    Font-size: 15px;
+    margin-top: 20px;
+}
+button{
+    padding: 5px 20px;
+    border: white solid 2px;
+    border-radius: 20px;
+    
+    background-color:  hsla(0, 0%, 100%, 0.75);
+    Font-size: 15px;
+    margin-top: 70px;
+    
+}
+button a{
+    text-decoration: none;
+}
+button:active{
+    background-color: transparent;
+    color: white;
+    border: white solid 1px;
+    border-radius: 20px;
+}
+button a:active{
+    color:white
+}
+.gridpage{
+    text-align: center;
+    background-color: aqua;
+}
+
+.cardy{
+    margin: 20px;
+    width: 210px;
+    padding: 10px;
+}
+.grid{
+    width: 60%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: aqua;
+
+    font-family: 'Lexend Deca', sans-serif;
+    margin-left: 20%;
+    margin-top: 50px;
+    color: white;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+.grid .card-orange{
+    background-color: blue;
+}
+}
+
+/* MOBILE*/
+@media (max-width:375px) {
+    .card{
+        display: flex;
+        
+        width: 80%;
+        margin: auto;
+    }
+    .grid{
+        
+        width: 80%;
+        margin: auto;
+        
+    }
+    
+}
+
